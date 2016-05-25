@@ -1,6 +1,7 @@
 [all:vars]
 ansible_ssh_user="vagrant"
 ansible_sudo=yes
-[all]
-172.28.128.10
-172.28.128.11
+[guest1]
+172.28.128.10 hostname=guest1
+[guest2]
+172.28.128.11 hostname=guest2

@@ -3,3 +3,5 @@
   tasks:
     - name: set authorized keys
       authorized_key: user=vagrant key="{{ lookup('file', 'id_rsa.pub') }}"
+    - name: set hostname
+      hostname: name={{ hostname }}
