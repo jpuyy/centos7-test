@@ -2,6 +2,10 @@
 ansible_ssh_user="vagrant"
 ansible_sudo=yes
 [guest1]
-172.28.128.10 hostname=guest1
+172.28.128.3 hostname=guest1
 [guest2]
-172.28.128.11 hostname=guest2
+172.28.128.4 hostname=guest2
+[sh-talaris-crowd-cron-2]
+172.28.128.3
+[qcr-lpd-talariscrowd-loc-1]
+172.28.128.3

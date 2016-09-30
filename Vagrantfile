@@ -7,4 +7,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     guest2.vm.box = "base"
   end
   config.vm.network "private_network", type: "dhcp"
+  config.vm.network "forwarded_port", guest: 5000, host: 5000
 end
