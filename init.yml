@@ -5,3 +5,10 @@
       authorized_key: user=vagrant key="{{ lookup('file', 'id_rsa.pub') }}"
     - name: set hostname
       hostname: name={{ hostname }}
+    - name: install packages
+      yum: name={{ item }}
+      with_items:
+        - 'ansible'
+        - 'vim'
+        - 'lrzsz'
+        - 'git'
