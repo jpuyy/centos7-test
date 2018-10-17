@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-yum install -y vim nc git
+yum install epel-release
+yum install -y vim nc git expect traceroute oathtool
